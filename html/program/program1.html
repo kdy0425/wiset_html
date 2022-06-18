@@ -1,0 +1,381 @@
+<?
+$menu_focus='2';
+include_once('../../layout/head.sub.html');
+?>
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../layout/head.html');
+?>
+<style>#footer{margin-top:0;}</style>
+<div id="content">
+	
+	<div class="sub_visual program1" style="background-image:url('../../assets/images/sub_visual_program1.jpg');">
+		여대생 프로그램 Regional-Women Empowerment in Science,
+	Engineering & Technology
+	</div>
+	<div class="sub_location">
+		<div class="container">
+			<div class="item">
+				<a href="/" class="btn home">홈으로</a>
+			</div>
+			<div class="item has_child">
+				<a href="../program/program1.html" class="btn">R-WeSET 2.0 프로그램 소개</a>
+				<ul>
+					<li><a href="../wiset/greeting.html">R-WeSET 2.0 소개</a></li>
+					<li><a href="../program/program1.html" class="active">R-WeSET 2.0 프로그램 소개</a></li>
+					<li><a href="../bbs/list1.html">R-WeSET 2.0 참여하기</a></li>
+					<li><a href="../bbs/list3.html">커뮤니티</a></li>
+				</ul>
+			</li>
+			</div>
+			<div class="item has_child">
+				<a href="../program/program1.html" class="btn">여대생 프로그램</a>
+				<ul>
+					<li><a href="../program/program1.html">여대생 프로그램</a></li>
+					<li><a href="../program/program2.html">여중고생 프로그램</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub_content">
+		<div class="program_wrap container">
+			<div class="prg_taps">
+				<a href="javascript:;">신기술 융합 LEVEL UP 클래스</a>
+				<a href="javascript:;">산업체 맞춤형 트랙/인턴십</a>
+				<a href="javascript:;">지역핵심산업 현장실무 SKILL UP 교육</a>
+				<a href="javascript:;">WISET J-리더스</a>
+				<a href="javascript:;">커리어 탐색 교육</a>
+				<a href="javascript:;">여성과학기술인 융합 특강</a>
+				<a href="javascript:;">진로멘토링 ‘힘내멘토링‘</a>
+			</div>
+			<script>
+			$('.prg_taps a').click(function(){
+				let number = $(this).index();
+				let target = $('.prg_wrap .prg_box').eq(number).offset().top;
+				$('html, body').animate({
+					  scrollTop: (target)
+					}, 400);
+			})
+			</script>
+			<div class="prg_wrap">
+				<div class="prg_box">
+					<div class="title">신기술 융합 LEVEL UP 클래스</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 참여 학생/전공의 수요를 반영한 교육 운영으로 만족도 향상</li>
+								<li>- 여대생의 현장실무 역량 및 취업 경쟁력 강화</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 지역별 핵심산업 진출에 꼭 필요한 전공분야 현장실무 지식 및 자격증 교육 제공</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- Auto-CAD 자격증반 운영 </li>
+								<li>- 모듈프로그램 운영</li>
+							</ul>
+							<div class="prg_table mgt20">
+								<table>
+									<thead>
+										<tr>
+											<th>분야</th>
+											<th>프로그램명</th>
+											<th>소요시간</th>
+											<th>분야</th>
+											<th>프로그램명</th>
+											<th>소요시간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="4">장비 및 tool 이용</td>
+											<td>공장 자동화의 이해</td>
+											<td>8</td>
+											<td rowspan="2">전공이해</td>
+											<td>총 질소 및 총 인 분석</td>
+											<td>8</td>
+										</tr>
+										<tr>
+											<td>기본 공구 사용법</td>
+											<td>8</td>
+											<td>기초 자동차 정비</td>
+											<td>6</td>
+										</tr>
+										<tr>
+											<td rowspan="2">CADⅠ(기계캐드)</td>
+											<td rowspan="2">12</td>
+											<td rowspan="2">BASIC</td>
+											<td>Excel</td>
+											<td>10</td>
+										</tr>
+										<tr>
+											<td>3D 프린팅</td>
+											<td>8</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">산업체 맞춤형 트랙/인턴십</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 산업체의 수요를 반영한 연계 교육을 지원</li>
+								<li>- 참여 학생의 현장실습 참여로 해당기업 및 전공분야 진출 촉진</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 산업체(수요자) 중심의 목적 지향형 교육과정을 개편·혁신함으로써 현장에 바로 투입 가능한 실무 강화 맞춤형 이공계 여성인재 양성을 목적으로 함</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 하계 방학 기간에 현장실습에 참여한 여대생을 대상으로 교통비 지원</li>
+								<li>- 현장실습 간담회를 통한 여대생들의 산업체에 대한 느낀점 및 피드백을 통한 취업 역량 강화 도모</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">지역핵심산업 현장실무 SKILL UP 교육</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 신기술분야 관련 진로정보 제공을 통한 이해도 향상 </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 재직자 온·오프라인 특강 제공, 신기술분야 산업체 연사와의 협의체 구축을 통한 적극적인 산업체 멘토링 체계 확립</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 산업체 재직자 실무 특강</li>
+								<li>- 중점학과별 전임교원의 신기술분야 맞춤형 콘텐츠 제공</li>
+								<li>- 신기술 융합 연계교육 운영</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">WISET J-리더스</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 수요맞춤형 프로젝트 교육 제공을 통한 이공계 여학생 문제해결 역량 강화 </li>
+								<li>- 호남권역 지역 단위의 Leading Core Group 단계별 발굴 시스템 구축을 통한 우수 이공계 여성인재 양성 및 지역핵심산업 분야 진출 촉진  </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- J(전남), J(전북), J(광주), J(제주)지역을 아우루는 호남·제주권역 만의 Leading Core Group을 지칭하여 J-리더스 프로그램 기획 </li>
+								<li>- PBL(Project Based Learning)교육 기반 심화 프로젝트 제공 </li>
+								<li>- 재직자 온·오프라인 특강 제공, 신기술분야 산업체와의 협의체 구축을 통한 적극적인 산업체 멘토링 체계 확립 </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- J-리더는 여대생을 대상으로 다시 3단계에 걸친 역량강화 트레이닝을 지원함. (커리어탐색/기초역량 개발→자기주도 프로젝트 역량 개발→현장실무 역량 강화/취업역량 제고)</li>
+								<li>- 커리어설계역량개발 ⇒ 기초역량개발⇒현장실무역량강화⇒취업역량제고에 이르는 단계별 모듈화 프로그램 운영 </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기 또는 방학 중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">커리어 탐색 교육</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 이공계 여대생 진로 설계 및 여성과학기술인 역할모델 제시를 통한 지역핵심산업분야 진출 촉진</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 이공계학과 여대생에게 체계적인 진로 설계 제공</li>
+								<li>- 이공계 적성 능력검사를 통한 자신의 유형 분석 및 직업·진로 파악</li>
+								<li>- 이공계 진로/취업 특강 운영을 통한 맞춤형 진로/취업 설계 제공</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 여학생의 생애주기 커리어 개발에 필요한 커리큘럼 구성, 여성과학기술인 특강 수강 및 진로 설계로 구성</li>
+								<li>- 미래 설계를 위한 이공계 진로 검사 및 진로설계 특강 제공</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">여성과학기술인 융합 특강</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 역할 모델 제시를 통한 수강 여대생의 전공분야 진출 의지 강화</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 전공분야 진출 자신감 강화를 위한 여성과학기술인 역할 모델 제시 </li>
+								<li>- 학생들의 니즈에 맞는 연사, 도내에서 접하기 힘든 다양한 분야의 연사를 초청하여 강연 진행 </li>
+								<li>- 참여학생 수요조사를 통한 희망 연사 초청 ⇒ 1차 특강 및 2차 소규모 온라인 멘토링 실시</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- (여성)과학기술인의 다양한 역할모델 제시 및 이공계분야 진로정보 제공</li>
+								<li>- 이공계 여대생의 전공융합 지식과 리더십 향상을 위한 특강 제공</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="prg_box">
+					<div class="title">진로멘토링 ‘힘내멘토링’</div>
+					<div class="item">
+						<span class="tit">목표</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- WISET 졸업 선배 멘토와의 멘토링을 통한 멘토링 선순환 구조 우수사례 발굴</li>
+								<li>- 이공계 분야 여성 멘토와의 멘토링 제공을 통한 롤모델 제시</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학생 주도적인 자율 희망멘토 초청 진로 멘토링 프로그램 운영</li>
+								<li>- 코로나19상황에 따라 도외 취업희망기업을 직접 방문할 수 없는 문제점을 보완하기 위하여, 해당기관 멘토를 직접 초청하여 멘토링 진행 </li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">운영방향</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 원하는 멘토 선정, 참여 학생 모집, 프로그램 구성 등 모든 과정을 학생 주도적으로 운영하고 사업단에서는 프로그램 운영 시 필요한 제반사항을 지원</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<span class="tit">추진일정</span>
+						<div class="cnt">
+							<ul class="dash">
+								<li>- 학기 또는 방학중</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<?
+include_once('../../layout/tail.html');
+?>
+</div>
+<!-- //wrap -->
+<?
+include_once('../../layout/tail.sub.html');
+?>
+</body>
+</html>

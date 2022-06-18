@@ -1,0 +1,116 @@
+<?
+$menu_focus='4';
+include_once('../../layout/head.sub.html');
+?>
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../layout/head.html');
+?>
+<div id="content">
+	
+	<div class="sub_visual qna" style="background-image:url('../../assets/images/sub_visual_qna.jpg');">
+		Q&A Regional-Women Empowerment in Science,
+Engineering & Technology
+	</div>
+
+	<div class="sub_location">
+		<div class="container">
+			<div class="item">
+				<a href="/" class="btn home">홈으로</a>
+			</div>
+			<div class="item has_child">
+				<a href="../bbs/list1.html" class="btn">R-WeSET 2.0 참여하기</a>
+				<ul>
+					<li><a href="../wiset/greeting.html">R-WeSET 2.0 소개</a></li>
+					<li><a href="../program/program1.html">R-WeSET 2.0 프로그램 소개</a></li>
+					<li><a href="../bbs/list1.html">R-WeSET 2.0 참여하기</a></li>
+					<li><a href="../bbs/list3.html" class="active">커뮤니티</a></li>
+				</ul>
+			</li>
+			</div>
+			<div class="item has_child">
+				<a href="../bbs/list.html" class="btn">Q&A</a>
+				<ul>
+					<li><a href="../bbs/list3.html">보도자료</a></li>
+					<li><a href="../bbs/list4.html">사업단 앨범</a></li>
+					<li><a href="../bbs/list5.html">Q&A</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub_content container">
+		<div class="bbs_title">Q&A</div>
+		<div class="bv_top clearfix">
+			<h3>Q&A 제목</h3>
+			<div class="info">
+				<span>작성자 홍길동</span>
+				<span>2022-04-18 11:11:11</span>
+				<span>조회수 3</span>
+			</div>
+		</div>
+		<div class="bv_cnt">
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.<br/>
+			Q&A 내용이 나오는 부분 입니다.
+		</div>
+		<div class="bv_answer">
+			<span class="title">답변</span>
+			<div class="answer_cnt">
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.<br/>
+				Q&A 답변 나오는 부분 입니다.
+			</div>
+		</div>
+		
+		<div class="bbs_btns xs">
+			<a href="javascript:;" class="btn white">수정</a>
+			<a href="javascript:;" class="btn white" onclick="$('.remove_write_popup').show()">삭제</a>
+			<a href="./list.html" class="btn">목록</a>
+		</div>
+	</div>
+
+</div>
+
+<div class="alert_layer remove_write_popup" style="display:none;">
+	<div class="alert_box">
+		<div class="alert_cnt">
+			<div class="lf_title">
+				게시글 삭제
+			</div>
+			<div class="lf_content">
+				<div class="default_pop_cnt align_left">
+					<span class="lf_hd0">정말 게시글을 삭제 하시겠습니까?<br/>삭제된 게시글은 복원되지 않습니다.</span>
+				</span></div>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn" onclick="$('.remove_write_popup').hide();">취소</a>
+				<a href="javascript:;" class="btn submit" onclick="$('.remove_write_popup').hide();">확인</a>
+			</div>
+		</div>
+	</div>
+	<span class="alert_bg" onclick="$('.remove_write_popup').hide();"></span>
+	<span class="blank"></span>
+</div>
+
+<?
+include_once('../../layout/tail.html');
+?>
+</div>
+<!-- //wrap -->
+<?
+include_once('../../layout/tail.sub.html');
+?>
+</body>
+</html>

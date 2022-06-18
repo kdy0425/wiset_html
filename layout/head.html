@@ -1,0 +1,51 @@
+	<!-- header -->
+	<div id="header" class="<?if(!strstr($_SERVER['REQUEST_URI'], "/main/")) {?>sub<?}?>">
+		<div class="hd_top">
+			<div class="container">
+				<div class="hd_lnb">
+					<a href="../member/member_modify.html">개인정보수정</a>
+					<a href="#">로그아웃</a>
+					<a href="../member/login.html" class="login">로그인</a>
+					<a href="../member/join_form.html" class="join">회원가입</a>
+				</div>
+			</div>
+		</div>
+		<div id="" class="hd_bottom">
+			<div class="container">
+				<h2 id="logo">
+					<a href="../main/main.html">
+						<img src="../../assets/images/logo.png" alt="WISET 호남제주권역 전북지연 R-WeSET사업단">
+					</a>
+				</h2>
+				<ul id="nav">                                                            
+					<li><a href="../wiset/greeting.html" class="nav_f <?if($menu_focus=='1'){?>active<?}?>">R-WeSET 2.0 소개</a>
+						<ul>
+							<li><a href="../wiset/greeting.html">인사말</a></li>
+							<li><a href="../wiset/business.html">사업소개</a></li>
+							<li><a href="../wiset/location.html">찾아오시는 길</a></li>
+						</ul>
+					</li>
+					<li><a href="../program/program1.html" class="nav_f  <?if($menu_focus=='2'){?>active<?}?>">R-WeSET 2.0 프로그램 소개</a>
+						<ul>
+							<li><a href="../program/program1.html">여대생 프로그램</a></li>
+							<li><a href="../program/program2.html">여중고생 프로그램</a></li>
+						</ul>
+					</li>
+					<li><a href="../bbs/list1.html" class="nav_f  <?if($menu_focus=='3'){?>active<?}?>">R-WeSET 2.0 참여하기</a>
+						<ul>
+							<li><a href="../bbs/list1.html">공지사항</a></li>
+							<li><a href="../bbs/list2.html">프로그램 신청</a></li>
+						</ul>
+					</li>
+					<li><a href="../bbs/list3.html" class="nav_f  <?if($menu_focus=='4'){?>active<?}?>">커뮤니티</a>
+						<ul>
+							<li><a href="../bbs/list3.html">보도자료</a></li>
+							<li><a href="../bbs/list4.html">사업단 앨범</a></li>
+							<li><a href="../bbs/list5.html">Q&A</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	

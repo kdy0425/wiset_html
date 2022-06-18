@@ -1,0 +1,131 @@
+<?
+include_once('../../layout/head.sub.html');
+?>
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../layout/head.html');
+?>
+<div id="content">
+	
+	<div class="sub_visual join" style="background-image:url('../../assets/images/sub_visual_join.jpg');">
+		회원가입 Regional-Women Empowerment in Science,
+Engineering & Technology
+	</div>
+	<div class="sub_location">
+		<div class="container">
+			<div class="item">
+				<a href="/" class="btn home">홈으로</a>
+			</div>
+			<div class="item">
+				<a href="javascript:;" class="btn">회원가입</a>
+			</div>
+			<div class="item">
+				<a href="javascript:;" class="btn">정보입력</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub_content container">
+		<h3 class="sub_title">회원가입</h3>
+
+		<div class="join_form">
+			<div class="join_table">
+				<strong class="title">개인정보 입력 <span class="stit">* 필수입력 사항입니다.</span></strong>
+				<table>
+					<tbody>
+						<tbody>
+							<tr>
+								<th>소속학교/학과 및 학년 <span class="req">*</span></th>
+								<td>
+									<select name="" id="" class="size_md">
+										<option value="">학교선택</option>
+										<option value="">ㅇㅇ학교</option>
+									</select>
+									<select name="" id="" class="size_md">
+										<option value="">학과선택</option>
+										<option value="">ㅇㅇ과</option>
+									</select>
+									<select name="" id="" class="size_md">
+										<option value="">학년선택</option>
+										<option value="">1학년</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>학번 <span class="req">*</span></th>
+								<td>
+									<input type="text" class="ip_num">
+								</td>
+							</tr>
+							<tr>
+								<th>성명 <span class="req">*</span></th>
+								<td>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호 <span class="req">*</span></th>
+								<td>
+									<input type="password">
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호 확인 <span class="req">*</span></th>
+								<td>
+									<input type="password">
+								</td>
+							</tr>
+							<tr>
+								<th>생년월일 <span class="req">*</span></th>
+								<td>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">년</span>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">월</span>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">일</span>
+
+									<label class="radiobox mgl10"><input type="radio" name="birth"><span></span>양력</label>
+									<label class="radiobox"><input type="radio" name="birth"><span></span>음력</label>
+								</td>
+							</tr>
+							<tr>
+								<th>출신고등학교명 및 유형 <span class="req">*</span></th>
+								<td>
+									<input type="text"><span class="txt">고등학교</span>
+									<label class="radiobox mgl10"><input type="radio" name="birth"><span></span>일반계</label>
+									<label class="radiobox"><input type="radio" name="birth"><span></span>전문계</label>
+								</td>
+							</tr>
+						</tbody>
+					</tbody>
+				</table>
+			</div>
+			<script>
+			$(document).on('keyup', '.ip_num', function (e) {
+				$(this).val($(this).val().replace(/[^0-9]/g, ""));
+			});
+			</script>
+		</div>
+		<div class="btn_box">
+			<a href="./join_comp.html" class="submit">가입하기</a>
+			<a href="javascript:;">취소</a>
+		</div>
+	</div>
+
+</div>
+
+<?
+include_once('../../layout/tail.html');
+?>
+</div>
+<!-- //wrap -->
+<?
+include_once('../../layout/tail.sub.html');
+?>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<?
+include_once('../../layout/head.sub.html');
+?>
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../layout/head.html');
+?>
+<div id="content">
+	
+	<div class="sub_visual join" style="background-image:url('../../assets/images/sub_visual_default.jpg');">
+		개인정보수정
+	</div>
+	<div class="sub_location">
+		<div class="container">
+			<div class="item">
+				<a href="/" class="btn home">홈으로</a>
+			</div>
+			<div class="item">
+				<a href="javascript:;" class="btn">개인정보수정</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="sub_content container">
+		<h3 class="sub_title">개인정보수정</h3>
+
+		<div class="join_form">
+			<div class="join_table">
+				<strong class="title">기본 정보 <span class="stit">* 입력하신 이름, 휴대전화 및 이메일정보는 개인정보 확인용으로 쓰입니다.</span></strong>
+				<table>
+					<tbody>
+						<tbody>
+							<tr>
+								<th>소속학교/학과 및 학년 <span class="req">*</span></th>
+								<td>
+									<select name="" id="" class="size_md">
+										<option value="">학교선택</option>
+										<option value="">ㅇㅇ학교</option>
+									</select>
+									<select name="" id="" class="size_md">
+										<option value="">학과선택</option>
+										<option value="">ㅇㅇ과</option>
+									</select>
+									<select name="" id="" class="size_md">
+										<option value="">학년선택</option>
+										<option value="">1학년</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>학번 <span class="req">*</span></th>
+								<td>
+									<input type="text" class="ip_num">
+								</td>
+							</tr>
+							<tr>
+								<th>성명 <span class="req">*</span></th>
+								<td>
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호 <span class="req">*</span></th>
+								<td>
+									<input type="password">
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호 확인 <span class="req">*</span></th>
+								<td>
+									<input type="password">
+								</td>
+							</tr>
+							<tr>
+								<th>생년월일 <span class="req">*</span></th>
+								<td>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">년</span>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">월</span>
+									<select name="" id="" class="size_sm">
+										<option value="">선택</option>
+									</select><span class="txt">일</span>
+
+									<label class="radiobox mgl10"><input type="radio" name="birth"><span></span>양력</label>
+									<label class="radiobox"><input type="radio" name="birth"><span></span>음력</label>
+								</td>
+							</tr>
+							<tr>
+								<th>출신고등학교명 및 유형 <span class="req">*</span></th>
+								<td>
+									<input type="text"><span class="txt">고등학교</span>
+									<label class="radiobox mgl10"><input type="radio" name="birth"><span></span>일반계</label>
+									<label class="radiobox"><input type="radio" name="birth"><span></span>전문계</label>
+								</td>
+							</tr>
+						</tbody>
+					</tbody>
+				</table>
+			</div>
+			<script>
+			$(document).on('keyup', '.ip_num', function (e) {
+				$(this).val($(this).val().replace(/[^0-9]/g, ""));
+			});
+			</script>
+			<div class="member_leave">
+				<a href="javascript:;" onclick="$('.member_leave_popup').show();">회원탈퇴하기</a>
+			</div>
+		</div>
+		<div class="btn_box">
+			<a href="javascript:;" class="submit">수정</a>
+			<a href="javascript:;">취소</a>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="alert_layer member_leave_popup" style="display:none;">
+	<div class="alert_box">
+		<div class="alert_cnt">
+			<div class="lf_title">
+				회원탈퇴
+			</div>
+			<div class="lf_content">
+				<div class="default_pop_cnt align_left">
+<span class="lf_bd1 dot">· 회원탈퇴 후 재 가입 시 신규회원으로 가입 되며, 탈퇴 전의 회원정보, 게시글은 복원되지않습니다</span>
+ <span class="lf_hd1 align_center mgt10">회원탈퇴 시 처리사항 안내를 확인 하였음에 동의합니다</span>
+				</div>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn" onclick="$('.member_leave_popup').hide();">취소</a>
+				<a href="javascript:;" class="btn submit" onclick="$('.member_leave_popup').hide();$('.member_leave_comp').show();">확인</a>
+			</div>
+		</div>
+	</div>
+	<span class="alert_bg" onclick="$('.member_leave_popup').hide();"></span>
+	<span class="blank"></span>
+</div>
+
+
+<div class="alert_layer member_leave_comp" style="display:none;">
+	<div class="alert_box">
+		<div class="alert_cnt">
+			<div class="lf_title">
+				회원탈퇴 완료 
+			</div>
+			<div class="lf_content">
+				<div class="default_pop_cnt align_left">
+ <span class="lf_hd0 align_center mgt10">회원탈퇴가 완료되었습니다.<br>이용해주셔서 감사합니다.</span>
+				</div>
+			</div>
+			<div class="lf_btns">
+				<a href="javascript:;" class="btn submit" onclick="$('.member_leave_comp').hide();">확인</a>
+			</div>
+		</div>
+	</div>
+	<span class="alert_bg" onclick="$('.member_leave_comp').hide();"></span>
+	<span class="blank"></span>
+</div>
+
+<?
+include_once('../../layout/tail.html');
+?>
+</div>
+<!-- //wrap -->
+<?
+include_once('../../layout/tail.sub.html');
+?>
+</body>
+</html>
