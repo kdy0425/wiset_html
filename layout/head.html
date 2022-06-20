@@ -17,6 +17,7 @@
 						<img src="../../assets/images/logo.png" alt="WISET 호남제주권역 전북지연 R-WeSET사업단">
 					</a>
 				</h2>
+				<button type="button" class="mb_menu"><span class="sound_only">메뉴</span><strong></strong><strong></strong><strong></strong></button>
 				<ul id="nav">                                                            
 					<li><a href="../wiset/greeting.html" class="nav_f <?if($menu_focus=='1'){?>active<?}?>">R-WeSET 2.0 소개</a>
 						<ul>
@@ -45,6 +46,22 @@
 						</ul>
 					</li>
 				</ul>
+				<span class="nav_bg"></span>
+				<script>
+				$('.nav_bg').click(function(){
+					$('#nav').animate({right: "-80%"}, {
+						duration: 500}
+					);
+					$('.nav_bg').fadeOut();
+				});
+				$('.mb_menu').click(function(){
+					$('#nav').animate({right: "0"}, {
+						duration: 500}
+					);
+					$('.nav_bg').fadeIn();
+				});
+				
+			</script>
 			</div>
 		</div>
 	</div>
